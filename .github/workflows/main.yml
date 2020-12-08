@@ -35,10 +35,12 @@ jobs:
         with:
           # Yarn command
           cmd: install 
+          
       - name: creating build
         run: yarn build
+        
       - name: installing surge
         run: npm install -g surge
         
       - name: deploying on surge
-        run: surge ./build http://practicereactapp.surge.sh/ --token ${{secrets.surgeToken}}
+        run: surge ./build http://inquisitive-popcorn.surge.sh/ --token ${{secrets.surgeToken}}
