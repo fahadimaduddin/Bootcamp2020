@@ -5,7 +5,7 @@ function App() {
     return ( <
         div className = "App" >
         <
-        h1 > Helloworld from Fahad < /h1>  < /
+        h1 > First React Application < /h1>  < /
         div >
     );
 }
